@@ -33,7 +33,7 @@ const generateHTML = (answers) =>
         <li><a href="https://github.com/${answers.github}" target="_blank"><button type="button" id="github-button"
               class="btn btn-dark"><i class="bi bi-github"></i>Github</button></a></li>
         <li><a href="${answers.linkedin}" target="_blank"><button type="button" id="github-button"
-              class="btn btn-primary"><i class="bi bi-linkedin"></i>LinkedIn</button></a></li>
+        class="btn btn-primary">Linked<i class="bi bi-linkedin"></i></button></a></li>
       </ul>
     </footer>
   
@@ -45,41 +45,45 @@ const generateCSS = () =>
   `main {
     margin-left: 10%;
   }
-
+  
   button {
     margin-right: .5em;
   }
-
-  i {
+  
+  .bi-github {
     margin-right: .5em;
   }
-
+  
+  .bi-linkedin {
+    margin-left: .1em;
+  }
+  
   footer {
     padding-top: 2%;
     padding-left: 5%;
     padding-bottom: 2%;
-
+  
     width: 100%;
-
+  
     position: absolute;
     bottom: 0;
-
+  
     background-color: #e9ecef;
   }
-
+  
   p {
     font-size: 18px;
   }
-
+  
   h2 {
     margin-bottom: 1em;
   }
-
+  
   ul {
     list-style-type: none;
     padding-left: 0;
   }
-
+  
   li {
     border: none;
     width: fit-content;
