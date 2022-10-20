@@ -17,7 +17,7 @@ const generateHTML = (answers) =>
   <body>
     <header class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4">Hi! My name is ${answers.name}.</h1>
+        <h1 class="display-4 font-weight-bold" >Hi! My name is ${answers.name}.</h1>
         <p class="lead">I am from ${answers.location}.</p>
       </div>
     </header>
@@ -86,6 +86,7 @@ inquirer
   ])
   .then((answers) => {
     const cssContent = generateCSS();
+
     fs.writeFile('style.css', cssContent, (err) =>
       err ? console.log(err) : console.log('Successfully created style.css!')
     );
