@@ -1,11 +1,43 @@
 main {
-    margin-left: 10%;
-  }
+  margin-left: 10%;
+}
 
-  button {
-    margin-right: .5em;
-  }
+button {
+  margin-right: .5em;
+}
 
-  i {
-    margin-right: .5em;
-  }
+i {
+  margin-right: .5em;
+}
+
+footer {
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-bottom: 2%;
+
+  width: 100%;
+
+  position: absolute;
+  bottom: 0;
+
+  background-color: #e9ecef;
+}
+
+p {
+  font-size: 18px;
+}
+
+h2 {
+  margin-bottom: 1em;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  border: none;
+  width: fit-content;
+  display: inline;
+}

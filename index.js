@@ -17,7 +17,7 @@ const generateHTML = (answers) =>
   <body>
     <header class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4 font-weight-bold" >Hi! My name is ${answers.name}.</h1>
+        <h1 class="display-4 font-weight-bold">Hi! My name is ${answers.name}.</h1>
         <p class="lead">I am from ${answers.location}.</p>
       </div>
     </header>
@@ -25,14 +25,17 @@ const generateHTML = (answers) =>
     <main>
       <p>I like ${answers.hobby}.</p>
       <p>My favorite food is ${answers.food}.</p>
-      <h2><span class="badge badge-secondary">Contact Me:</span></h2>
-      <ul class="list-group">
-        <li class="list-group-item"><a href="https://github.com/${answers.github}" target="_blank"><button type="button"
-              id="github-button" class="btn btn-dark"><i class="bi bi-github"></i>Github</button></a></li>
-        <li class="list-group-item"><a href="${answers.linkedin}" target="_blank"><button type="button" id="github-button"
+    </main>
+  
+    <footer>
+    <h2 class="font-weight-bold">Contact Me:</h2>
+      <ul>
+        <li><a href="https://github.com/${answers.github}" target="_blank"><button type="button" id="github-button"
+              class="btn btn-dark"><i class="bi bi-github"></i>Github</button></a></li>
+        <li><a href="${answers.linkedin}" target="_blank"><button type="button" id="github-button"
               class="btn btn-primary"><i class="bi bi-linkedin"></i>LinkedIn</button></a></li>
       </ul>
-    </main>
+    </footer>
   
   </body>
   
@@ -49,6 +52,38 @@ const generateCSS = () =>
 
   i {
     margin-right: .5em;
+  }
+
+  footer {
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-bottom: 2%;
+
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+
+    background-color: #e9ecef;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  h2 {
+    margin-bottom: 1em;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  li {
+    border: none;
+    width: fit-content;
+    display: inline;
   }`;
 
 inquirer
